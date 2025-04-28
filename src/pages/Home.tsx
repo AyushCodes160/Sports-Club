@@ -108,7 +108,7 @@ const Home: React.FC = () => {
                   className="rounded-lg shadow-xl"
                 />
                 <div className="absolute -bottom-6 -right-6 bg-blue-600 text-white p-6 rounded-lg shadow-lg max-w-xs hidden md:block">
-                  <p className="font-semibold">Founded in 1985, our sports club has a rich tradition of excellence and community.</p>
+                  <p className="font-semibold">Founded in 2024, our sports club has a rich tradition of excellence and community.</p>
                 </div>
               </div>
             </div>

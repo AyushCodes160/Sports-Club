@@ -14,7 +14,7 @@ const Footer = () => {
               <span className="text-xl font-bold">NST SportsClub</span>
             </div>
             <p className="text-slate-400 mb-4">
-              Empowering students through sports and teamwork since 1985. Join us to discover your potential!
+              Empowering students through sports and teamwork since 2024. Join us to discover your potential!
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-slate-400 hover:text-blue-400 transition-colors">
@@ -109,7 +109,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-slate-400 mt-0.5" />
-                <span className="text-slate-400">123 University Ave, College Town, CT 10101</span>
+                <span className="text-slate-400">DY Patil Knowledge City Road Via Lohgaon, Airport Rd, Charholi Budruk, Pune, Maharashtra 412105</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-slate-400" />
