@@ -103,9 +103,9 @@ const Home: React.FC = () => {
             <div className="lg:w-1/2">
               <div className="relative">
                 <img 
-                  src="https://images.pexels.com/photos/267507/pexels-photo-267507.jpeg" 
-                  alt="College Campus" 
-                  className="rounded-lg shadow-xl"
+                  src="https://images.pexels.com/photos/358042/pexels-photo-358042.jpeg" 
+                  alt="Sports Equipment" 
+                  className="rounded-lg shadow-xl h-56 w-full object-cover"
                 />
                 <div className="absolute -bottom-6 -right-6 bg-blue-600 text-white p-6 rounded-lg shadow-lg max-w-xs hidden md:block">
                   <p className="font-semibold">Founded in 2024, our sports club has a rich tradition of excellence and community.</p>
