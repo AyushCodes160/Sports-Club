@@ -39,49 +39,49 @@ const Sports: React.FC = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-slate-100 mb-4">Our Training Facilities</h2>
             <p className="text-slate-300 max-w-3xl mx-auto">
-              We pride ourselves on providing top-notch facilities for all our athletes. These training spaces are designed to help you reach your full potential.
+              We take pride in providing world-class training facilities designed to enhance your athletic performance and foster skill development in your chosen sport.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="rounded-lg overflow-hidden shadow-md bg-slate-700 border border-slate-600">
               <img 
-                src="https://images.pexels.com/photos/260352/pexels-photo-260352.jpeg" 
-                alt="Indoor Gymnasium" 
+                src="https://images.pexels.com/photos/114296/pexels-photo-114296.jpeg" 
+                alt="Professional Turf" 
                 className="w-full h-64 object-cover"
               />
               <div className="p-4">
-                <h3 className="font-bold text-lg mb-2 text-slate-100">Indoor Gymnasium</h3>
+                <h3 className="font-bold text-lg mb-2 text-slate-100">Professional Sports Turf</h3>
                 <p className="text-slate-300">
-                  A multi-purpose gymnasium with professional flooring, basketball courts, and volleyball setups.
+                  Experience the thrill of playing on our meticulously maintained professional turf, exclusively reserved for cricket and football training sessions. With dedicated weekly slots, teams can practice and perfect their strategies in an ideal environment.
                 </p>
               </div>
             </div>
 
             <div className="rounded-lg overflow-hidden shadow-md bg-slate-700 border border-slate-600">
               <img 
-                src="https://images.pexels.com/photos/863988/pexels-photo-863988.jpeg" 
-                alt="Olympic Pool" 
+                src="https://images.pexels.com/photos/4144923/pexels-photo-4144923.jpeg" 
+                alt="Indoor Sports Arena" 
                 className="w-full h-64 object-cover"
               />
               <div className="p-4">
-                <h3 className="font-bold text-lg mb-2 text-slate-100">Olympic Pool</h3>
+                <h3 className="font-bold text-lg mb-2 text-slate-100">Indoor Sports Arena</h3>
                 <p className="text-slate-300">
-                  A 50-meter Olympic-sized swimming pool with temperature control and diving platforms.
+                  Our state-of-the-art indoor facility features dedicated spaces for table tennis and badminton, complete with professional-grade equipment and optimal lighting. The climate-controlled environment ensures year-round comfort for players of all levels.
                 </p>
               </div>
             </div>
 
             <div className="rounded-lg overflow-hidden shadow-md bg-slate-700 border border-slate-600">
               <img 
-                src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg" 
-                alt="Soccer Field" 
+                src="https://images.pexels.com/photos/260024/pexels-photo-260024.jpeg" 
+                alt="Strategic Gaming Center" 
                 className="w-full h-64 object-cover"
               />
               <div className="p-4">
-                <h3 className="font-bold text-lg mb-2 text-slate-100">Soccer Field</h3>
+                <h3 className="font-bold text-lg mb-2 text-slate-100">Strategic Gaming Center</h3>
                 <p className="text-slate-300">
-                  A full-sized soccer field with professional maintenance and lighting for evening practices.
+                  Our specially designed chess center provides a serene and focused environment for strategic thinking. With soundproofed rooms, ergonomic furniture, and professional chess equipment, it's the perfect space for developing tactical skills and competitive play.
                 </p>
               </div>
             </div>
