@@ -29,26 +29,26 @@ const Navbar = () => {
 
   const navbarClasses = `fixed w-full z-50 transition-all duration-300 ${
     isScrolled
-      ? 'bg-white shadow-md py-2'
-      : 'bg-transparent py-4'
+      ? 'bg-slate-900 shadow-md py-2'
+      : 'bg-slate-900/95 backdrop-blur-sm py-4'
   }`;
 
   const linkClasses = ({ isActive }: { isActive: boolean }) =>
     `relative block py-2 px-3 transition-all duration-200 ${
       isActive
-        ? 'text-blue-700 font-semibold'
+        ? 'text-blue-400 font-semibold'
         : isScrolled
-        ? 'text-gray-800 hover:text-blue-600'
-        : 'text-gray-800 hover:text-blue-600'
-    } after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-700 after:transition-all after:duration-300 hover:after:w-full`;
+        ? 'text-slate-200 hover:text-blue-400'
+        : 'text-slate-200 hover:text-blue-400'
+    } after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-400 after:transition-all after:duration-300 hover:after:w-full`;
 
   return (
     <nav className={navbarClasses}>
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <NavLink to="/" className="flex items-center gap-2">
-            <Trophy className="w-8 h-8 text-blue-700" />
-            <span className="text-xl font-bold text-gray-900">NST SportsClub</span>
+            <Trophy className="w-8 h-8 text-blue-400" />
+            <span className="text-xl font-bold text-slate-200">NST SportsClub</span>
           </NavLink>
 
           {/* Mobile menu button */}
@@ -58,9 +58,9 @@ const Navbar = () => {
             aria-label="Toggle menu"
           >
             {isOpen ? (
-              <X className="w-6 h-6 text-gray-800" />
+              <X className="w-6 h-6 text-slate-200" />
             ) : (
-              <Menu className="w-6 h-6 text-gray-800" />
+              <Menu className="w-6 h-6 text-slate-200" />
             )}
           </button>
 
@@ -89,49 +89,49 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         <div
-          className={`md:hidden absolute left-0 right-0 bg-white shadow-lg transition-all duration-300 ease-in-out overflow-hidden ${
+          className={`md:hidden absolute left-0 right-0 bg-slate-900 shadow-lg transition-all duration-300 ease-in-out overflow-hidden ${
             isOpen ? 'max-h-screen py-4' : 'max-h-0'
           }`}
         >
           <div className="flex flex-col space-y-2 px-4">
             <NavLink
               to="/"
-              className="py-2 text-gray-800 hover:text-blue-600 font-medium"
+              className="py-2 text-slate-200 hover:text-blue-400 font-medium"
               onClick={closeMenu}
             >
               Home
             </NavLink>
             <NavLink
               to="/sports"
-              className="py-2 text-gray-800 hover:text-blue-600 font-medium"
+              className="py-2 text-slate-200 hover:text-blue-400 font-medium"
               onClick={closeMenu}
             >
               Sports
             </NavLink>
             <NavLink
               to="/gallery"
-              className="py-2 text-gray-800 hover:text-blue-600 font-medium"
+              className="py-2 text-slate-200 hover:text-blue-400 font-medium"
               onClick={closeMenu}
             >
               Gallery
             </NavLink>
             <NavLink
               to="/leaders"
-              className="py-2 text-gray-800 hover:text-blue-600 font-medium"
+              className="py-2 text-slate-200 hover:text-blue-400 font-medium"
               onClick={closeMenu}
             >
               Leaders
             </NavLink>
             <NavLink
               to="/about"
-              className="py-2 text-gray-800 hover:text-blue-600 font-medium"
+              className="py-2 text-slate-200 hover:text-blue-400 font-medium"
               onClick={closeMenu}
             >
               About
             </NavLink>
             <NavLink
               to="/contact"
-              className="py-2 text-gray-800 hover:text-blue-600 font-medium"
+              className="py-2 text-slate-200 hover:text-blue-400 font-medium"
               onClick={closeMenu}
             >
               Contact

@@ -4,54 +4,45 @@ interface SportCardProps {
   name: string;
   image: string;
   description: string;
-  coach: string;
-  schedule: string;
-  achievements: string[];
+  coordinator: {
+    name: string;
+    contact: string;
+  };
 }
 
 const SportCard: React.FC<SportCardProps> = ({
   name,
   image,
   description,
-  coach,
-  schedule,
-  achievements,
+  coordinator,
 }) => {
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
+    <div className="bg-slate-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:shadow-xl hover:-translate-y-2 border border-slate-700">
       <div
         className="h-64 bg-cover bg-center"
         style={{ backgroundImage: `url(${image})` }}
       ></div>
       <div className="p-6">
-        <h3 className="text-2xl font-bold text-gray-900 mb-3">{name}</h3>
-        <p className="text-gray-700 mb-4">{description}</p>
+        <h3 className="text-2xl font-bold text-slate-100 mb-3">{name}</h3>
+        <p className="text-slate-300 mb-6">{description}</p>
         
-        <div className="mb-4">
-          <h4 className="text-sm font-semibold text-gray-900 mb-2">Coach</h4>
-          <p className="text-gray-700">{coach}</p>
+        <div className="border-t border-slate-700 pt-4">
+          <h4 className="text-sm font-semibold text-slate-200 mb-3">Team Coordinator</h4>
+          <div className="space-y-2">
+            <p className="text-slate-300">
+              <span className="text-slate-400">Name:</span> {coordinator.name}
+            </p>
+            <p className="text-slate-300">
+              <span className="text-slate-400">Contact:</span>{' '}
+              <a 
+                href={`mailto:${coordinator.contact}`}
+                className="text-blue-400 hover:text-blue-300 transition-colors"
+              >
+                {coordinator.contact}
+              </a>
+            </p>
+          </div>
         </div>
-        
-        <div className="mb-4">
-          <h4 className="text-sm font-semibold text-gray-900 mb-2">Training Schedule</h4>
-          <p className="text-gray-700">{schedule}</p>
-        </div>
-        
-        <div>
-          <h4 className="text-sm font-semibold text-gray-900 mb-2">Key Achievements</h4>
-          <ul className="list-disc pl-5 text-gray-700">
-            {achievements.map((achievement, index) => (
-              <li key={index}>{achievement}</li>
-            ))}
-          </ul>
-        </div>
-        
-        <a
-          href="#"
-          className="inline-block mt-5 px-4 py-2 bg-blue-700 text-white rounded-md font-medium hover:bg-blue-800 transition-colors"
-        >
-          Join Team
-        </a>
       </div>
     </div>
   );
